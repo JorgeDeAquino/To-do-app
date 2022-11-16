@@ -1,3 +1,35 @@
+:root {
+    /*Fonte*/
+    --fonte: 'Josefin Sans','sans-serif';
+
+    /*Variaveis light mode*/
+    --fundoClaro: hsl(233, 11%, 84%);
+    --listCor: hsl(235, 19%, 35%);
+
+    /*Variaveis dark mode*/
+}
+
+body {
+    font-weight: 400;
+
+    background-image: url(../images/bg-mobile-light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    background-color: var(--fundoClaro);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+
+    width: 100%;
+    min-height: 100%;
+}
+
+
 * {
     box-sizing: border-box;
 }
