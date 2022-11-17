@@ -1,4 +1,4 @@
-//Declarações 
+//Declarações das variaveis  
 
 
 
