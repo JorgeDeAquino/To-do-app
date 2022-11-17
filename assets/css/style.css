@@ -53,6 +53,12 @@ header {
     padding: 1rem 0;
 }
 
+.btn__tema {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 form {
     width: 80%;
     background-color: aliceblue;
