@@ -10,6 +10,7 @@
 }
 
 body {
+    font-family: var(--fonte);
     font-weight: 400;
 
     background-image: url(../images/bg-mobile-light.jpg);
@@ -51,6 +52,12 @@ header {
     justify-content: space-around;
     margin-bottom: 1.5rem;
     padding: 1rem 0;
+}
+
+.btn__tema {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 form {
