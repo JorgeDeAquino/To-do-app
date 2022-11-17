@@ -10,6 +10,7 @@
 }
 
 body {
+    font-family: var(--fonte);
     font-weight: 400;
 
     background-image: url(../images/bg-mobile-light.jpg);
