@@ -3,11 +3,11 @@
     --fonte: 'Josefin Sans','sans-serif';
 
     /*Variaveis light mode*/
-    --fundoClaro: hsl(233, 11%, 84%);
-    --fundoFormulario: hsl(0, 0%, 98%);
+    --cinza_claro: hsl(0, 0%, 98%);
+    --cinza_claroAzulado: hsl(236, 33%, 92%);
+    --cor_fundo: hsl(233, 11%, 84%); 
     --cinza: hsl(236, 9%, 61%) ;
-    --listaCor: hsl(235, 19%, 35%);
-    --bordaCirculo: hsl(236, 33%, 92%);
+    --cinza_escuro: hsl(235, 19%, 35%);
 
     /*Variaveis dark mode*/
 }
@@ -20,7 +20,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
-    background-color: var(--fundoClaro);
+    background-color: var(--cor_fundo);
 
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@ header {
 
 
 form {
-    background-color: var(--fundoFormulario);
+    background-color: var(--cinza_claro);
 
     display: flex;
 
@@ -80,7 +80,7 @@ form {
 }
 
 .circulo {
-    border: 1px solid var(--bordaCirculo);
+    border: 1px solid var(--cinza_claroAzulado);
     
     width: 18px;
     height: 18px;
@@ -107,7 +107,7 @@ form input {
 
 .todo__container {
     width: 80%;
-    background-color: var(--fundoFormulario);
+    background-color: var(--cinza_claro);
     border-radius: 5px;
     padding: .7rem;
     display: flex;
@@ -126,7 +126,7 @@ form input {
     display: flex;
     align-items: center;
 
-    border-bottom: 1px solid var(--bordaCirculo);
+    border-bottom: 1px solid var(--cinza_claroAzulado);
 
     padding: 1rem;
     margin-bottom: .4rem;
@@ -136,7 +136,7 @@ form input {
 
 
 .lista__descricao, .lista__close {
-    color: var(--listaCor);
+    color: var(--cinza_escuro);
     font-weight: 700;
 }
 .lista__descricao {
@@ -172,7 +172,7 @@ a {
     padding: .7rem;
     gap: 1rem;
     width: 80%;
-    background-color: var(--fundoFormulario);
+    background-color: var(--cinza_claro);
     border-radius: 5px;
     flex: 1;
     display: flex;
