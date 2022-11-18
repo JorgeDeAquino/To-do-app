@@ -124,6 +124,12 @@ form input {
 .tarefas__lista {
     display: flex;
     align-items: center;
+
+    border-bottom: 1px solid var(--bordaCirculo);
+
+    padding: 1rem;
+    margin-bottom: .4rem;
+    
     width: 100%;
 }
 
