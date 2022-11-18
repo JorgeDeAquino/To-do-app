@@ -4,7 +4,9 @@
 
     /*Variaveis light mode*/
     --fundoClaro: hsl(233, 11%, 84%);
-    --listCor: hsl(235, 19%, 35%);
+    --fundoFormulario: hsl(0, 0%, 98%);
+    --listaCor: hsl(235, 19%, 35%);
+    --bordaCirculo: hsl(236, 33%, 92%);
 
     /*Variaveis dark mode*/
 }
@@ -60,17 +62,48 @@ header {
     cursor: pointer;
 }
 
+
+
+
 form {
-    width: 80%;
-    background-color: aliceblue;
+    background-color: var(--fundoFormulario);
+
+    display: flex;
+
     border-radius: 5px;
+    
     padding: .7rem;
     margin-bottom: 1rem;
+
+    width: 80%;
+}
+
+
+.circulo__check {
+
+    background: url(../images/icon-check.svg), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+.circulo {
+    border: 1px solid var(--bordaCirculo);
+    
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+}
+
+input {
+    width: 100%;
 }
 
 .todo__container {
     width: 80%;
-    background-color: aliceblue;
+    background-color: var(--fundoFormulario);
     border-radius: 5px;
     padding: .7rem;
     display: flex;
@@ -99,7 +132,7 @@ a {
     padding: .7rem;
     gap: 1rem;
     width: 80%;
-    background-color: aliceblue;
+    background-color: var(--fundoFormulario);
     border-radius: 5px;
     flex: 1;
     display: flex;
