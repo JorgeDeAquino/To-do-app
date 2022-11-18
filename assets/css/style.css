@@ -5,6 +5,7 @@
     /*Variaveis light mode*/
     --fundoClaro: hsl(233, 11%, 84%);
     --fundoFormulario: hsl(0, 0%, 98%);
+    --cinza: hsl(236, 9%, 61%) ;
     --listaCor: hsl(235, 19%, 35%);
     --bordaCirculo: hsl(236, 33%, 92%);
 
@@ -133,6 +134,7 @@ form input {
     width: 100%;
 }
 
+
 .lista__descricao, .lista__close {
     color: var(--listaCor);
     font-weight: 700;
@@ -149,6 +151,11 @@ form input {
 
     width: 12px;
     height: 12px;
+}
+
+.completa {
+    color: var(--cinza);
+   text-decoration: line-through;
 }
 
 .acoes {
