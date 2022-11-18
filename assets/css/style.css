@@ -78,6 +78,17 @@ form {
     width: 80%;
 }
 
+.circulo {
+    border: 1px solid var(--bordaCirculo);
+    
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    margin-right: .5rem;
+
+}
 
 .circulo__check {
 
@@ -87,18 +98,10 @@ form {
    
 }
 
-.circulo {
-    border: 1px solid var(--bordaCirculo);
-    
-    width: 18px;
-    height: 18px;
-
-    border-radius: 50%;
-
-}
-
-input {
+form input {
     width: 100%;
+
+    border: none;
 }
 
 .todo__container {
@@ -116,6 +119,30 @@ input {
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+.tarefas__lista {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.lista__descricao, .lista__close {
+    color: var(--listaCor);
+    font-weight: 700;
+}
+.lista__descricao {
+    vertical-align: center;
+    align-self: center;
+}
+
+.lista__close {
+    background-image: url(../images/icon-cross.svg);
+    background-position: center;
+    margin-left: auto;
+
+    width: 12px;
+    height: 12px;
 }
 
 .acoes {
