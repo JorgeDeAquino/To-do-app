@@ -1,8 +1,9 @@
 - [x] Definindo layout inicial 
-- [ ] style to inputs
-- [ ] Fazer os checkbox ficarem redondos
-- [ ] Finalizar a declaraçõa de variáveis
-- [ ] Inserir a fonte padrão do projeto
+- [x] style to inputs
+- [x] Fazer os checkbox ficarem redondos
+- [x] Finalizar a declaraçõa de variáveis light Mode
+- [ ] Finalizar a declaraçõa de variáveis dark Mode
+- [x] Inserir a fonte padrão do projeto
 - [ ] Introduzir fonte clamp() **para font-size
 - [ ] Ajustar a imagem de fundo
 - [ ] declaração das variáveis de js 
