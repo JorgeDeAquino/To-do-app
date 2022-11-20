@@ -1,19 +1,72 @@
 //Declarações variaveis 
 //input...
-const todoForm = document.querySelector("#todo__form");
+const todoForm = document.querySelector("#todo__form")
 const inputNewTodo = document.querySelector("#todo__input")
+const tarefaContainer = document.querySelector('.tarefas')
+const circulos = document.querySelectorAll('.circulo')
 
 //funções
 
 
 
 
+
+
+function criaItens () {
+
+
+    const item = document.createElement('li')
+    item.classList.add('tarefas__lista')
+
+    const circulo = document.createElement('div') 
+    circulo.classList.add('circulo')
+    
+
+    const descricao = document.createElement('h3') 
+    descricao.classList.add('lista__descricao')
+
+
+   descricao.textContent = inputNewTodo.value
+
+    const btnDelete = document.createElement('button') 
+    btnDelete.classList.add('btn__tema')
+
+    const imgDelete = document.createElement('img')
+    imgDelete.setAttribute("src", "./assets/images/icon-cross.svg");
+
+
+    
+    btnDelete.appendChild(imgDelete)
+
+    item.appendChild(circulo)
+    item.appendChild(descricao)
+    item.appendChild(btnDelete)
+    
+
+    tarefaContainer.append(item)
+
+
+
+}
+
+
 //eventos
 
+todoForm.addEventListener('submit', function(evento) {
+    
+    evento.preventDefault()
+    
+})
+
+inputNewTodo.addEventListener('keypress', function(evento){
+
+    if(evento.which == 13 && evento.code !== "") {
+
+        criaItens()
+        inputNewTodo.value = "";
+     }
+
+})
 
 
-let circuloSelecionado = document.querySelector(".circulo");
-
-circuloSelecionado.addEventListener("click", function(event) {
-    event.target.parentNode.classList.add("circulo__check");
-});
+//titulo.addEventListener('click', completo)
