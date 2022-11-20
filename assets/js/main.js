@@ -1,10 +1,16 @@
 //Declarações variaveis 
 //input...
-const todoForm = document.querySelector("#todo__form");
+const todoForm = document.querySelector("#todo__form")
 const inputNewTodo = document.querySelector("#todo__input")
 const tarefaContainer = document.querySelector('.tarefas')
+const circulos = document.querySelectorAll('.circulo')
 
 //funções
+
+
+
+
+
 
 function criaItens () {
 
@@ -19,7 +25,8 @@ function criaItens () {
     const descricao = document.createElement('h3') 
     descricao.classList.add('lista__descricao')
 
-    descricao.textContent = 'Teste'
+
+   descricao.textContent = inputNewTodo.value
 
     const btnDelete = document.createElement('button') 
     btnDelete.classList.add('btn__tema')
@@ -27,7 +34,7 @@ function criaItens () {
     const imgDelete = document.createElement('img')
     imgDelete.setAttribute("src", "./assets/images/icon-cross.svg");
 
-   
+
     
     btnDelete.appendChild(imgDelete)
 
@@ -38,7 +45,28 @@ function criaItens () {
 
     tarefaContainer.append(item)
 
+
+
 }
 
 
 //eventos
+
+todoForm.addEventListener('submit', function(evento) {
+    
+    evento.preventDefault()
+    
+})
+
+inputNewTodo.addEventListener('keypress', function(evento){
+
+    if(evento.which == 13 && evento.code !== "") {
+
+        criaItens()
+        inputNewTodo.value = "";
+     }
+
+})
+
+
+//titulo.addEventListener('click', completo)
