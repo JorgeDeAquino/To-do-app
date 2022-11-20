@@ -107,8 +107,14 @@ form {
 
 form input {
     width: 100%;
+    height: 100%;
 
     border: none;
+}
+
+form input:focus {
+    border: none;
+    outline: none;
 }
 
 .todo__container {
