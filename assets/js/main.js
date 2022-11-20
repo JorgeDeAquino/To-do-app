@@ -19,7 +19,7 @@ function criaItens () {
     const descricao = document.createElement('h3') 
     descricao.classList.add('lista__descricao')
 
-    descricao.textContent = 'Teste'
+   //descricao.textContent = inputNewTodo.value
 
     const btnDelete = document.createElement('button') 
     btnDelete.classList.add('btn__tema')
@@ -27,7 +27,7 @@ function criaItens () {
     const imgDelete = document.createElement('img')
     imgDelete.setAttribute("src", "./assets/images/icon-cross.svg");
 
-   
+
     
     btnDelete.appendChild(imgDelete)
 
@@ -42,3 +42,17 @@ function criaItens () {
 
 
 //eventos
+
+todoForm.addEventListener('submit', function(evento) {
+    
+    evento.preventDefault()
+    
+})
+
+inputNewTodo.addEventListener('keypress', function(evento){
+
+    if(evento.which == 13 && evento.code !== "") {
+        console.log("enter pressionado")
+     }
+
+})
