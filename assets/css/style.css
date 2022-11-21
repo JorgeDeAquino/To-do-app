@@ -137,7 +137,7 @@ form input:focus {
 .tarefas__lista {
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
     border-bottom: 1px solid var(--cinza_claroAzulado);
 
     padding: 1rem;
@@ -154,8 +154,10 @@ form input:focus {
 }
 
 .lista__descricao {
-    vertical-align: center;
-    align-self: center;
+    text-align: left;
+    padding: .7rem;
+    width: 90%;
+
 }
 
 .lista__close {
