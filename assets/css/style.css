@@ -85,7 +85,7 @@ form {
     width: 80%;
 }
 
-.circulo {
+.circulo, .circulo__referencia {
     border: 1px solid var(--cinza_claroAzulado);
 
     width: 18px;
