@@ -25,9 +25,10 @@ function criaItens () {
 
     const btnDelete = document.createElement('button') 
     btnDelete.classList.add('btn__tema')
-
+    
     const imgDelete = document.createElement('img')
     imgDelete.setAttribute("src", "./assets/images/icon-cross.svg");
+    imgDelete.classList.add('img__remove')
 
 
     
