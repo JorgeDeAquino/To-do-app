@@ -7,11 +7,6 @@ const circulos = document.querySelectorAll('.circulo')
 
 //funções
 
-
-
-
-
-
 function criaItens () {
 
 
@@ -45,8 +40,6 @@ function criaItens () {
 
     tarefaContainer.append(item)
 
-
-
 }
 
 
@@ -68,5 +61,3 @@ inputNewTodo.addEventListener('keypress', function(evento){
 
 })
 
-
-//titulo.addEventListener('click', completo)

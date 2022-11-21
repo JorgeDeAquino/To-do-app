@@ -1,12 +1,12 @@
 :root {
     /*Fonte*/
-    --fonte: 'Josefin Sans','sans-serif';
+    --fonte: 'Josefin Sans', 'sans-serif';
 
     /*Variaveis light mode*/
     --cinza_claro: hsl(0, 0%, 98%);
     --cinza_claroAzulado: hsl(236, 33%, 92%);
-    --cor_fundo: hsl(233, 11%, 84%); 
-    --cinza: hsl(236, 9%, 61%) ;
+    --cor_fundo: hsl(233, 11%, 84%);
+    --cinza: hsl(236, 9%, 61%);
     --cinza_escuro: hsl(235, 19%, 35%);
 
     /*Variaveis dark mode*/
@@ -25,7 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     gap: 2rem;
 
     padding: 1rem;
@@ -78,7 +78,7 @@ form {
     display: flex;
 
     border-radius: 5px;
-    
+
     padding: .7rem;
     margin-bottom: 1rem;
 
@@ -87,7 +87,7 @@ form {
 
 .circulo {
     border: 1px solid var(--cinza_claroAzulado);
-    
+
     width: 18px;
     height: 18px;
 
@@ -102,7 +102,7 @@ form {
     background: url(../images/icon-check.svg), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     background-repeat: no-repeat;
     background-position: center;
-   
+
 }
 
 form input {
@@ -142,15 +142,17 @@ form input:focus {
 
     padding: 1rem;
     margin-bottom: .4rem;
-    
+
     width: 100%;
 }
 
 
-.lista__descricao, .lista__close {
+.lista__descricao,
+.lista__close {
     color: var(--cinza_escuro);
     font-weight: 700;
 }
+
 .lista__descricao {
     vertical-align: center;
     align-self: center;
@@ -167,7 +169,7 @@ form input:focus {
 
 .completa {
     color: var(--cinza);
-   text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 .acoes {
