@@ -50,7 +50,7 @@ function atualizaContador () {
     //diferença de total - completos
     const contador = document.querySelector('#itens__restantes--contador')
     const circuloLista = document.querySelectorAll('.circulo__check')
-    console.log(circuloLista);
+    //console.log(circuloLista);
 
     contador.textContent = tarefaContainer.childElementCount - circuloLista.length
     
