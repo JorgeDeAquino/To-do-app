@@ -11,4 +11,6 @@ document.addEventListener('click', (e) => {
 
     };
 
+    atualizaContador() //chama função que atualiza os itens ativos no contador
+
 })

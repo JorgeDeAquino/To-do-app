@@ -39,8 +39,21 @@ function criaItens () {
     item.appendChild(btnDelete)
     
 
-    tarefaContainer.append(item)
+    tarefaContainer.append(item) 
 
+}
+
+//função que mostra os itens ativos no canto inferior da tela 
+function atualizaContador () {
+
+    //seleciona os itens completos e mostra na tela quantos faltam para serem completos
+    //diferença de total - completos
+    const contador = document.querySelector('#itens__restantes--contador')
+    const circuloLista = document.querySelectorAll('.circulo__check')
+    console.log(circuloLista);
+
+    contador.textContent = tarefaContainer.childElementCount - circuloLista.length
+    
 }
 
 
@@ -49,6 +62,9 @@ function criaItens () {
 todoForm.addEventListener('submit', function(evento) {
     
     evento.preventDefault()
+
+    atualizaContador() //chama função que atualiza os itens ativos no contador
+
     
 })
 
