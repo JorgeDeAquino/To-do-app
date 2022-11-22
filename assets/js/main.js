@@ -5,6 +5,8 @@ const inputNewTodo = document.querySelector("#todo__input")
 const tarefaContainer = document.querySelector('.tarefas')
 const circulos = document.querySelectorAll('.circulo')
 const limpaCompleto = document.querySelector('.btn__limpar__campos') 
+const filtro = document.querySelectorAll('.btn__filter')
+
 
 
 //funções
@@ -58,6 +60,39 @@ function atualizaContador () {
     
 }
 
+function filtraTodos() {
+
+    document.querySelectorAll('.circulo').forEach((elemento) => {
+
+    elemento.parentNode.style.display = 'inherit'
+
+   })
+
+
+}
+function filtraAtivo() {
+
+    document.querySelectorAll('.circulo__check').forEach((elemento) => {
+
+    elemento.parentNode.style.display = 'none'
+
+   })
+
+}
+function filtraCompleto() {
+
+    document.querySelectorAll('.circulo').forEach((elemento) => {
+
+        if(elemento.classList.contains('.circulo_check')){
+             return
+        } else {
+             elemento.parentNode.style.display = 'none'
+        } 
+
+   })
+
+}
+
 
 //eventos
 
@@ -80,7 +115,7 @@ inputNewTodo.addEventListener('keypress', function(evento){
 
 })
 
-//função para limpar todos os itens completos
+//listener para limpar todos os itens completos
 limpaCompleto.addEventListener('click', () => {
  
    document.querySelectorAll('.circulo__check').forEach((elemento) => {
@@ -91,3 +126,27 @@ limpaCompleto.addEventListener('click', () => {
       
 })
 
+filtro.forEach((elemento) => {
+
+    elemento.addEventListener('click', (evento) => {
+        
+        const filtroConteudo = evento.target.textContent
+    
+
+       
+
+        if(filtroConteudo == 'All') {
+            filtraTodos()
+        } else if(filtroConteudo == 'Active') {
+            filtraAtivo()
+        console.log('cheguei aqui');
+        } else if (filtroConteudo == 'Completed'){
+            filtraCompleto()
+        }
+
+
+
+    })
+
+
+})
