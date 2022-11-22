@@ -80,16 +80,14 @@ inputNewTodo.addEventListener('keypress', function(evento){
 
 })
 
-
+//função para limpar todos os itens completos
 limpaCompleto.addEventListener('click', () => {
  
-   
    document.querySelectorAll('.circulo__check').forEach((elemento) => {
 
     elemento.parentNode.remove()
 
    })
-   
-   
+      
 })
 

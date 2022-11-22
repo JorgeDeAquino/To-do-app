@@ -10,3 +10,7 @@
 - [x] geração de elementos li
 - [x] Recolher as informações inseridas pelo usuário
 - [ ] Criar funcionalidade drag and drop
+- [x] Remover todos os itens completos
+- [ ] mostrar somente aitivos
+- [ ] mostrar somente completos
+- [ ] mostrar todos
