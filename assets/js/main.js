@@ -81,15 +81,15 @@ function filtraAtivo() {
 }
 function filtraCompleto() {
 
-    document.querySelectorAll('.circulo').forEach((elemento) => {
+//     document.querySelectorAll('.circulo').forEach((elemento) => {
 
-        if(elemento.classList.contains('.circulo_check')){
-             return
-        } else {
-             elemento.parentNode.style.display = 'none'
-        } 
+//         if(elemento.classList.contains('.circulo_check')){
+//              return
+//         } else {
+//              elemento.parentNode.style.display = 'none'
+//         } 
 
-   })
+//    })
 
 }
 
@@ -107,7 +107,7 @@ todoForm.addEventListener('submit', function(evento) {
 
 inputNewTodo.addEventListener('keypress', function(evento){
 
-    if(evento.which == 13 && evento.code !== "") {
+    if(evento.keyCode == '13' && evento.code !== "") {
 
         criaItens()
         inputNewTodo.value = "";
