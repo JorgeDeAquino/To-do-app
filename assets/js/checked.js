@@ -1,8 +1,5 @@
-
-
 let circuloSelecionado = document.querySelectorAll(".circulo");
 let descricao = document.querySelectorAll(".lista__descricao");
-
 
 
 document.addEventListener('click', (e) => {

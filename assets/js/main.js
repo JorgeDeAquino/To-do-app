@@ -4,6 +4,8 @@ const todoForm = document.querySelector("#todo__form")
 const inputNewTodo = document.querySelector("#todo__input")
 const tarefaContainer = document.querySelector('.tarefas')
 const circulos = document.querySelectorAll('.circulo')
+const limpaCompleto = document.querySelector('.btn__limpar__campos') 
+
 
 //funções
 
@@ -76,5 +78,16 @@ inputNewTodo.addEventListener('keypress', function(evento){
         inputNewTodo.value = "";
      }
 
+})
+
+//função para limpar todos os itens completos
+limpaCompleto.addEventListener('click', () => {
+ 
+   document.querySelectorAll('.circulo__check').forEach((elemento) => {
+
+    elemento.parentNode.remove()
+
+   })
+      
 })
 
