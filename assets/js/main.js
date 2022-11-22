@@ -107,7 +107,7 @@ todoForm.addEventListener('submit', function(evento) {
 
 inputNewTodo.addEventListener('keypress', function(evento){
 
-    if(evento.code == 'Enter' && evento.code !== "") {
+    if(evento.keyCode == 13 && evento.code !== "") {
 
         criaItens()
         inputNewTodo.value = "";
