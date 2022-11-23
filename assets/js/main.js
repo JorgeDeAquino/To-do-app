@@ -60,38 +60,36 @@ function atualizaContador () {
     
 }
 
-function filtraTodos() {
-
-    document.querySelectorAll('.circulo').forEach((elemento) => {
-
-    elemento.parentNode.style.display = 'inherit'
-
-   })
-
-
-}
-function filtraAtivo() {
-
-    document.querySelectorAll('.circulo__check').forEach((elemento) => {
-
-    elemento.parentNode.style.display = 'none'
-
-   })
-
-}
-function filtraCompleto() {
+// function filtraTodos() {
 
 //     document.querySelectorAll('.circulo').forEach((elemento) => {
 
-//         if(elemento.classList.contains('.circulo_check')){
-//              return
-//         } else {
-//              elemento.parentNode.style.display = 'none'
-//         } 
+//     elemento.parentNode.style.display = 'inherit'
 
 //    })
 
-}
+
+// }
+// function filtraAtivo() {
+
+//     document.querySelectorAll('.circulo__check').forEach((elemento) => {
+
+//     elemento.parentNode.style.display = 'none'
+
+//    })
+
+// }
+// function filtraCompleto() {
+
+//     document.querySelectorAll('.circulo').forEach((elemento) => {
+
+//         if(elemento.classList.contains('.circulo__check')){
+//             elemento.parentNode.style.display = 'none'
+//         }
+
+//    })
+
+// }
 
 
 //eventos
@@ -126,27 +124,27 @@ limpaCompleto.addEventListener('click', () => {
       
 })
 
-filtro.forEach((elemento) => {
+// filtro.forEach((elemento) => {
 
-    elemento.addEventListener('click', (evento) => {
+//     elemento.addEventListener('click', (evento) => {
         
-        const filtroConteudo = evento.target.textContent
+//         const filtroConteudo = evento.target.textContent
     
 
        
 
-        if(filtroConteudo == 'All') {
-            filtraTodos()
-        } else if(filtroConteudo == 'Active') {
-            filtraAtivo()
-        console.log('cheguei aqui');
-        } else if (filtroConteudo == 'Completed'){
-            filtraCompleto()
-        }
+//         if(filtroConteudo == 'All') {
+//             filtraTodos()
+//         } else if(filtroConteudo == 'Active') {
+//             filtraAtivo()
+//         console.log('cheguei aqui');
+//         } else if (filtroConteudo == 'Completed'){
+//             filtraCompleto()
+//         }
 
 
 
-    })
+//     })
 
 
-})
+// })

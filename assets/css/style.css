@@ -12,14 +12,17 @@
     /*Variaveis dark mode*/
 }
 
+
+
+
 body {
     font-family: var(--fonte);
     font-weight: 400;
 
     background-image: url(../images/bg-mobile-light.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top left;
+    background-size: contain;
+    background-position: 0 0;
     background-color: var(--cor_fundo);
 
     display: flex;
@@ -31,7 +34,7 @@ body {
     padding: 1rem;
 
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 
@@ -85,7 +88,8 @@ form {
     width: 80%;
 }
 
-.circulo, .circulo__referencia {
+.circulo,
+.circulo__referencia {
     border: 1px solid var(--cinza_claroAzulado);
 
     width: 18px;
@@ -193,4 +197,5 @@ a {
     flex: 1;
     display: flex;
     justify-content: center;
+    max-height: 40px;
 }
