@@ -47,6 +47,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    margin-top: 4rem;
     margin-bottom: 1.5rem;
     padding: 1rem 0;
 }
@@ -69,7 +71,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
 }
 

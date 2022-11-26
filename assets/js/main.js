@@ -45,6 +45,17 @@ function criaItens () {
 
     tarefaContainer.append(item) 
 
+    const listaAtual = {'descricao':descricao.textContent}
+
+    salvaLista.push(listaAtual)
+
+    
+
+    localStorage.setItem('descricao', JSON.stringify(salvaLista))
+
+    console.log(listaAtual.descricao.textContent)
+    console.log(tarefaContainer)
+
 }
 
 //função que mostra os itens ativos no canto inferior da tela 
@@ -59,37 +70,6 @@ function atualizaContador () {
     contador.textContent = tarefaContainer.childElementCount - circuloLista.length
     
 }
-
-// function filtraTodos() {
-
-//     document.querySelectorAll('.circulo').forEach((elemento) => {
-
-//     elemento.parentNode.style.display = 'inherit'
-
-//    })
-
-
-// }
-// function filtraAtivo() {
-
-//     document.querySelectorAll('.circulo__check').forEach((elemento) => {
-
-//     elemento.parentNode.style.display = 'none'
-
-//    })
-
-// }
-// function filtraCompleto() {
-
-//     document.querySelectorAll('.circulo').forEach((elemento) => {
-
-//         if(elemento.classList.contains('.circulo__check')){
-//             elemento.parentNode.style.display = 'none'
-//         }
-
-//    })
-
-// }
 
 
 //eventos
@@ -124,27 +104,7 @@ limpaCompleto.addEventListener('click', () => {
       
 })
 
-// filtro.forEach((elemento) => {
-
-//     elemento.addEventListener('click', (evento) => {
-        
-//         const filtroConteudo = evento.target.textContent
-    
-
-       
-
-//         if(filtroConteudo == 'All') {
-//             filtraTodos()
-//         } else if(filtroConteudo == 'Active') {
-//             filtraAtivo()
-//         console.log('cheguei aqui');
-//         } else if (filtroConteudo == 'Completed'){
-//             filtraCompleto()
-//         }
-
-
-
-//     })
-
-
-// })
+//drag and dropt by library
+new Sortable (tarefaContainer, {
+    animation: 300
+});
