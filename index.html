@@ -14,13 +14,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./assets/css/style.css">
-
+  
   <script src="./assets/js/main.js" defer></script>
   <script src="./assets/js/checked.js" defer></script>
   <script src="./assets/js/remove.js" defer></script>
   <script src="./assets/js/removeall.js" defer></script>
   <script src="./assets/js/filtro.js" defer></script>
+  <script src="./assets/js/darkmode.js" defer></script>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
 
   <title>Todo app</title>
 
@@ -41,7 +43,7 @@
   <main>
     <header>
       <h1>T O D O</h1>
-      <button class="btn__tema light"><img src="./assets/images/icon-moon.svg" alt="moon svg"></button>
+      <button class="btn__tema light" data-theme><img src="./assets/images/icon-moon.svg" alt="moon svg"></button>
     </header>
 
     <form id="todo__form">
