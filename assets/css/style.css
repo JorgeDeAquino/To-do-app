@@ -16,7 +16,7 @@
     --bg-img-desktop: url(../images/bg-desktop-light.jpg);
 }
 
-:root{
+:root {
     /* theme dark */
     --bg-color: hsl(235, 21%, 11%);
     --card-bg: hsl(235, 24%, 19%);
@@ -26,7 +26,7 @@
     --hover-color: hsl(236, 33%, 92%);
     --check-color: hsl(233, 14%, 35%);
     --bg-img-mobile-dark: url(../images/bg-mobile-dark.jpg);
-    --bg-img-desktop: url(../images/bg-desktop-dark.jpg);
+    --bg-img-desktop-dark: url(../images/bg-desktop-dark.jpg);
 }
 
 body {
@@ -60,7 +60,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     padding: 1rem 0;
@@ -95,7 +95,7 @@ form {
 
     border-radius: 5px;
 
-    padding: .7rem;
+    padding: 1rem .7rem 1rem .7rem;
     margin-bottom: 1rem;
 
     width: 90%;
@@ -103,7 +103,7 @@ form {
 
 #todo__input {
     background-color: transparent;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .circulo,
@@ -166,6 +166,7 @@ form input:focus {
     margin-bottom: .4rem;
 
     width: 100%;
+    cursor: pointer;
 }
 
 
@@ -186,7 +187,7 @@ form input:focus {
     background-image: url(../images/icon-cross.svg);
     background-position: center;
     margin-left: auto;
-    
+
 
     width: 12px;
     height: 12px;
@@ -203,16 +204,16 @@ form input:focus {
     justify-content: space-between;
     padding: 0 .7rem 1rem .7rem;
     font-size: 14px;
-    color: var(--cinza_escuro);
 }
 
-.itens__restantes {
-    color: var(--cinza);
+.acoes p,
+.acoes a {
+    color: var(--bg-color);
 }
 
 a {
     text-decoration: none;
-    color: var(--cinza);
+    color: var(--bg-color);
 }
 
 .filtros {
@@ -231,17 +232,27 @@ a {
     color: var(--ativado);
 }
 
+.attribution {
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 17px;
+}
+
 /* Dark theme */
 .dark {
     background-image: var(--bg-img-mobile-dark);
     background-color: var(--bg-color);
 }
 
-.dark header h1{
+.dark header h1 {
     color: var(--hover-color);
 }
 
-.dark form{
+.dark form {
     background-color: var(--card-bg);
 }
 
@@ -249,8 +260,8 @@ a {
     color: var(--text-color);
 }
 
-.dark .circulo, .dark
-.circulo__referencia {
+.dark .circulo,
+.dark .circulo__referencia {
     border: 1px solid var(--text-color);
 }
 
@@ -275,6 +286,31 @@ a {
     background-color: var(--card-bg);
 }
 
-.dark a {
+.dark a,
+.dark .acoes p,
+.dark .acoes a {
     color: var(--text-color);
+}
+
+.dark .attribution {
+    color: var(--hover-color);
+}
+
+.dark .attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 15px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    header, form, .todo__container, .filtros {
+        width: 60%;
+        max-width: 700px;
+    }
+    body {
+        background-image: var(--bg-img-desktop);
+    }
+    .dark {
+        background-image: var(--bg-img-desktop-dark);
+    }
 }
