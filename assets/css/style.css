@@ -12,7 +12,6 @@
     --ativado: hsl(220, 98%, 61%);
     --cinza_escuro: hsl(235, 19%, 35%);
     --cor_fundo: hsl(233, 11%, 84%);
-    --shadow-color: hsla(240, 5%, 85%, 0.603);
     --bg-img-mobile: url(../images/bg-mobile-light.jpg);
     --bg-img-desktop: url(../images/bg-desktop-light.jpg);
 }
@@ -57,10 +56,12 @@ body {
 }
 
 header {
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
     padding: 1rem 0;
 }
@@ -69,6 +70,7 @@ header {
 header h1 {
     color: var(--cinza_claro);
     font-size: 28px;
+    font-weight: 700;
 }
 
 .btn__tema {
@@ -82,11 +84,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
 }
-
-
 
 form {
     background-color: var(--cinza_claro);
@@ -98,7 +98,7 @@ form {
     padding: .7rem;
     margin-bottom: 1rem;
 
-    width: 80%;
+    width: 90%;
 }
 
 #todo__input {
@@ -140,7 +140,7 @@ form input:focus {
 }
 
 .todo__container {
-    width: 80%;
+    width: 90%;
     background-color: var(--cinza_claro);
     border-radius: 5px;
 
@@ -172,14 +172,13 @@ form input:focus {
 .lista__descricao,
 .lista__close {
     color: var(--cinza_escuro);
-    font-weight: 700;
 }
 
 .lista__descricao {
     text-align: left;
-    padding: .1rem;
+    padding: .1rem .3rem .1rem .5rem;
     width: 90%;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 500;
 }
 
@@ -203,17 +202,23 @@ form input:focus {
     display: flex;
     justify-content: space-between;
     padding: 0 .7rem 1rem .7rem;
+    font-size: 14px;
+    color: var(--cinza_escuro);
+}
+
+.itens__restantes {
+    color: var(--cinza);
 }
 
 a {
     text-decoration: none;
-    color: var(--cinza_escuro);
+    color: var(--cinza);
 }
 
 .filtros {
     padding: .7rem;
     gap: 1rem;
-    width: 80%;
+    width: 90%;
     background-color: var(--cinza_claro);
     border-radius: 5px;
     flex: 1;
@@ -229,11 +234,11 @@ a {
 /* Dark theme */
 .dark {
     background-image: var(--bg-img-mobile-dark);
-    background-color: var(--check-color);
+    background-color: var(--bg-color);
 }
 
 .dark header h1{
-    color: var(--card-bg);
+    color: var(--hover-color);
 }
 
 .dark form{
