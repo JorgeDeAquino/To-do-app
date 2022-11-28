@@ -202,6 +202,7 @@ form input:focus {
     flex: 1;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 .7rem 1rem .7rem;
     font-size: 14px;
 }
@@ -240,6 +241,11 @@ a {
 .attribution a {
     color: hsl(228, 45%, 44%);
     font-size: 17px;
+}
+
+.lFiltros {
+    padding: 0;
+    height: auto;
 }
 
 /* Dark theme */
