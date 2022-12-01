@@ -1,9 +1,10 @@
 # ToDo List
 
 ## Proposta
-Olá, obrigado pro vir dar uma conferida no nosso projeto, ele foi feito com uma parceria de dois desenvolvedores *Cléber Severo* e *jorge Alexandre* tendo como base o desafio do <a src="https://www.frontendmentor.io/ ">frontend mentor</a> <br>
+Olá, obrigado pro vir dar uma conferida no nosso projeto, ele foi feito com uma parceria de dois desenvolvedores *Cléber Severo* e *jorge Alexandre* tendo como base o desafio do [Frontend mentor](https://www.frontendmentor.io/)
+ <br>
 
-<a src="https://cleber-severo.github.io/To-do-app/"><img width=40%% textAlign="center" src="./assets/images/screenshots/todoLight.png" alt="todo desktop"></a> <br>
+[<img width=40%% textAlign="center" src="./assets/images/screenshots/todoLight.png" alt="todo desktop">](https://cleber-severo.github.io/To-do-app/) <br>
 
 ## O projeto
 
