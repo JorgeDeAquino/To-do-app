@@ -1,7 +1,7 @@
 # ToDo List
 
 ## Proposta
-Olá, obrigado pro vir dar uma conferida no nosso projeto, ele foi feito com uma parceria de dois desenvolvedores *Cléber Severo* e *jorge Alexandre* tendo como base o desafio do [Frontend mentor](https://www.frontendmentor.io/)
+Olá, obrigado por vir dar uma conferida no nosso projeto, ele foi feito com uma parceria de dois desenvolvedores *Cléber Severo* e *jorge Alexandre* tendo como base o desafio do [Frontend mentor](https://www.frontendmentor.io/)
  <br>
 
 [<img width=70%% textAlign="center" src="./assets/images/screenshots/todoLight.png" alt="todo desktop">](https://cleber-severo.github.io/To-do-app/) <br>
