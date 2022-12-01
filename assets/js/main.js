@@ -1,4 +1,4 @@
-//Declarações variaveis 
+//Declarações variaveis
 //input...
 const todoForm = document.querySelector("#todo__form")
 const inputNewTodo = document.querySelector("#todo__input")
@@ -58,7 +58,7 @@ function criaItens() {
 
 }
 
-//função que mostra os itens ativos no canto inferior da tela 
+//função que mostra os itens ativos no canto inferior da tela
 function atualizaContador() {
 
     //seleciona os itens completos e mostra na tela quantos faltam para serem completos
@@ -104,7 +104,7 @@ limpaCompleto.addEventListener('click', () => {
 
 })
 
-// //drag and dropt by library
-// new Sortable(tarefaContainer, {
-//     animation: 300
-// });
+//drag and dropt by library
+new Sortable(tarefaContainer, {
+     animation: 300
+});
