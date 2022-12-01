@@ -23,7 +23,7 @@ As tecnologias utilizadas foram HTML, CSS e JavaScript.<br>
  <img width=50% textAlign="center" src="./images/screenshots/todoDark.png" alt="dark mode">
  
  **Mobile**<br>
- <img width=50% src="./images/screenshots/todoMobileLight.png" alt="mobile">
+ <img width=50% src="./assets/images/screenshots/todoMobileLight.png" alt="mobile">
    
  **Mobile Dark-mode**<br>
 <img width=50% src="./images/screenshots/todoMobile.png" alt="mobile dark-mode">
